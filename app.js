@@ -21,6 +21,7 @@ Complete Exercise 2 in the space below:
 */
 
 foods.push("Pizza", "Cheeseburger");
+//or use foods.unshift("Pizza", "Cheeseburger");
 
 console.log('Exercise 2 result:', foods);
 
@@ -88,7 +89,10 @@ Complete Exercise 7 in the space below:
 */
 
 const yummy = foods.slice(1, 3);//start at index 1 so sushi and stop befoe index 3
-
+//start index is inclusive meaning it includes that index but the end index
+//is exclusive meaning it does not include that index so start 1 will inc;ude
+//sushi but end index being 3 means only cupcake will be included
+//and tofu will be excluded
 console.log('Exercise 7 result:', yummy);
 
 /*
@@ -186,9 +190,9 @@ const fizzbuzz = [];
 for (const num of nums){
     if(num % 3 === 0 && num % 5 === 0){
         fizzbuzz.push(num);
-    }else if(num % 3 === 0){
+    } if(num % 3 === 0){
         fizz.push(num);
-    }else if(num % 5 === 0){
+    } if(num % 5 === 0){
         buzz.push(num);
     }
 }
